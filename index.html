@@ -15,7 +15,7 @@
         var canvas = document.getElementById("myCanvas");
         var context = canvas.getContext('2d');
 
-        canvas.addEventListener("mousemove", function(evt){
+        canvas.addEventListener("mousedown", function(evt){
             var mousePos = getMousePos(canvas, evt);
             var Message = "Coordenadas:  x:" + mousePos.x + ", y: " + mousePos.y;
             console.log(Message);
