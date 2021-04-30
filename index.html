@@ -15,7 +15,7 @@
         var canvas = document.getElementById("myCanvas");
         var context = canvas.getContext('2d');
 
-        canvas.addEventListener("mousedown", function(evt){
+        canvas.addEventListener("mousemove", function(evt){
             var mousePos = getMousePos(canvas, evt);
             var Message = "Coordenadas:  x:" + mousePos.x + ", y: " + mousePos.y;
             console.log(Message);
@@ -28,6 +28,7 @@
             circle = canvas.getContext('2d');
             circle.fillStyle = "rgba(135,200,150,0.4)";
         })();
+        
 
             
     </script>
